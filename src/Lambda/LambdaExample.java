@@ -1,8 +1,17 @@
-// Lambda is anonymous function with no name, no modifier and no return type
 package Lambda;
+
+interface Drawable{
+    public void draw();
+}
+
 
 public class LambdaExample {
     public static void main(String[] args) {
-        System.out.println("Hello world");
+        int width=10;
+
+        Drawable d2=()->{
+            System.out.println("Drawing "+width);
+        };
+        d2.draw();
     }
 }
