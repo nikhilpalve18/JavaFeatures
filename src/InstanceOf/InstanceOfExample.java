@@ -18,13 +18,13 @@ class Dog extends Animal {
 
 public class InstanceOfExample {
     public static void main(String[] args) {
-        Animal myPet = new Dog();
+        Animal pet = new Dog();
 
-        if (myPet instanceof Dog) {
-            myPet.makeSound();
-            ((Dog) myPet).fetch();
+        if (pet instanceof Dog) {
+            pet.makeSound();
+            ((Dog) pet).fetch();
         } else {
-            myPet.makeSound(); // Calls Animal's makeSound method
+            pet.makeSound(); // Calls Animal's makeSound method
         }
     }
 }
