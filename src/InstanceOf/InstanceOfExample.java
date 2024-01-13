@@ -12,7 +12,7 @@ class Dog extends Animal {
     }
 
     public void fetch() {
-        System.out.println("Fetching the ball!");
+        System.out.println("Fetching ball!");
     }
 }
 
